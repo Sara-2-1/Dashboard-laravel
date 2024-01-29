@@ -30,6 +30,7 @@ route::get('/logout',[DashboardController::class,'logout'])->name('logout');
 route::get('/checkout',[ItemsController::class,'checkout'])->name('checkout')->middleware('auth');
 
 route::get('/showproduct/{id}',[ItemsController::class,'showproduct'])->name('showproduct');
+route::post('/sa',[ItemsController::class,'SaveCheckout'])->name('sa');
 
 route::get('/addtocart/{id}',[ItemsController::class,'AddtoCart'])->name('addtocart');
 

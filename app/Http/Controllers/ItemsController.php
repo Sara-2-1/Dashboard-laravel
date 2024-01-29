@@ -32,9 +32,12 @@ return redirect('showproduct/' . $idgroup);//redirect showproduct
 }
 public function Checkout(){
     $cartitems=Cart::All();
-    $total=0;
+
     return view('checkout',['cartitems'=>$cartitems]);
 }       
+public function SaveCheckout(){
+    return view("success");
+}
 
  public function GetItemGroup(){
 

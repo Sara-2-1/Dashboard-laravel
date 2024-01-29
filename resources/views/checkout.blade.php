@@ -31,7 +31,8 @@ use App\Models\Items;
                     
               </div>
               <div class="col-lg-6 px-5 py-4">
-
+              <form action="{{route('sa')}}" method="post">
+                @csrf
                 <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">الدفع</h3>
 
                 <form class="mb-5">
@@ -64,7 +65,8 @@ use App\Models\Items;
                       </div>
                     </div>
                   </div>
-                  <button type="button" class="btn btn-primary btn-block btn-lg">Buy now</button>
+            
+                  <button class="btn btn-primary mt-2" type="submit" onclick="showmessage()">ادفع الان </button>
 
 
                   </h5>
@@ -73,6 +75,7 @@ use App\Models\Items;
 
               </div>
             </div>
+ 
             @endforeach
               @endif
           </div>
