@@ -54,7 +54,7 @@ return view('itemgroup' ,['data'=>$data , 'issave'=> $issave]);
     ]);
 
     $data->save();
-    return redirect('addgritem');
+    return redirect('itemgroup');
  }
 
  public function GetItems(){
