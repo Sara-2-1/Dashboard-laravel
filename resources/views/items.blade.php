@@ -18,6 +18,7 @@
    <label for="itemgroupno" class="p-2"> رقم المنتج </label>
    <input type="text" class="form-control  form-control-sm" name="itemgroupno" id="itemgroupno" >
    <div class="text-center">
+    <input type="file" class="form-control form-control-sm pt-2" name="img" id="img" accept="image/*">
    <button class="btn btn-primary mt-2" type="submit" onclick="showmessage()"> حفظ </button>
             </div>
             </form>
